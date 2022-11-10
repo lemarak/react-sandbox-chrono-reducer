@@ -37,6 +37,11 @@
   justify-content: center;
   align-items: center;
 }
+.box-btns:nth-child(2) button {
+  border: 3px solid green;
+  box-shadow: 0 6px green;
+  color: green;
+}
 .box-btns button:active {
   box-shadow: 0 0px #4a64d8;
   top: 6px;
@@ -49,13 +54,15 @@
   margin: 0 15px;
 }
 
-.box-btns:nth-child(1){
+.box-btns:nth-child(1) {
   margin-right: 30px;
 }
-.box-btns:nth-child(1), .box-btns:nth-child(2){
+.box-btns:nth-child(1),
+.box-btns:nth-child(2) {
   position: relative;
 }
-.box-btns:nth-child(1)::before, .box-btns:nth-child(2)::before{
+.box-btns:nth-child(1)::before,
+.box-btns:nth-child(2)::before {
   content: "Session";
   position: absolute;
   left: 51%;
@@ -65,7 +72,8 @@
   text-transform: uppercase;
   color: #4a64d8;
 }
-.box-btns:nth-child(2)::before{
+.box-btns:nth-child(2)::before {
+  color: green;
   content: "BREAK";
 }
 
@@ -80,7 +88,6 @@ h1 span {
   padding: 15px;
   background: #4a64d8;
 }
-
 
 .container-controllers {
   display: flex;
